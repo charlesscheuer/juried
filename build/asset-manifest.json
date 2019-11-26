@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cc52226.chunk.css",
+    "main.css": "/static/css/main.4bdc9cb1.chunk.css",
     "main.js": "/static/js/main.1e7faffc.chunk.js",
     "main.js.map": "/static/js/main.1e7faffc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.43fd69f1.js",
@@ -8,9 +8,9 @@
     "static/js/2.faded347.chunk.js": "/static/js/2.faded347.chunk.js",
     "static/js/2.faded347.chunk.js.map": "/static/js/2.faded347.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.88966c11a0737618ac5962e56435caaf.js": "/precache-manifest.88966c11a0737618ac5962e56435caaf.js",
+    "precache-manifest.5e9c7c7ef30ef76cdc1949667054475c.js": "/precache-manifest.5e9c7c7ef30ef76cdc1949667054475c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5cc52226.chunk.css.map": "/static/css/main.5cc52226.chunk.css.map",
+    "static/css/main.4bdc9cb1.chunk.css.map": "/static/css/main.4bdc9cb1.chunk.css.map",
     "static/media/main.scss": "/static/media/gt-america-thin.22249bca.woff",
     "static/media/juried logo-01.svg": "/static/media/juried logo-01.c32794f6.svg",
     "static/media/pastel.jpg": "/static/media/pastel.4c2e668d.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.43fd69f1.js",
     "static/js/2.faded347.chunk.js",
-    "static/css/main.5cc52226.chunk.css",
+    "static/css/main.4bdc9cb1.chunk.css",
     "static/js/main.1e7faffc.chunk.js"
   ]
 }
