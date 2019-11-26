@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// colors
+$color-primary: #d6b26e;
+// former primary : b78653;
+$color-light: #ece2ce;
+$color-secondary: #1d2b37;
+
+// FONT VARIABLES
+$font: 'GT America', sans-serif;
+$font-2: 'GT America expanded bold', sans-serif;
+$font-3: 'Canela', serif;
+
+body {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: $font;
+}
+
+$divider-height: 4rem;
+
+.divider {
+  background-color: $color-primary;
+  height: $divider-height;
+}
+//transitions
+$trans-primary: cubic-bezier(0.075, 0.82, 0.165, 1);
+$trans-standard: cubic-bezier(0.05, 0.05, 0.05, 0.05);
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../Fonts/gt-america-blackitalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../Fonts/gt-america-thin.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../Fonts/gt-america-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../Fonts/gt-america-medium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../Fonts/gt-america-bold.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'GT America Expanded Bold';
+  src: url('../Fonts/gt-america-expanded-bold.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GT America Expanded Bold';
+  src: url('../Fonts/gt-america-expanded-black.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../Fonts/Canela-Regular-Web.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../Fonts/Canela-Bold.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../Fonts/Canela-Light.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../Fonts/Canela-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../Fonts/Canela-BoldItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}

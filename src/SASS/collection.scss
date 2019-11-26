@@ -1,0 +1,68 @@
+.sticks {
+  position: relative;
+}
+
+.latestHeader {
+  height: $divider-height;
+  color: $color-light;
+  background-color: $color-secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: -0.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: $font-3;
+}
+
+.latestContent {
+  padding-top: 3rem;
+  position: relative;
+  background-color: $color-light;
+  z-index: 100;
+  &_item {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 6rem;
+    &_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &-img {
+      height: auto;
+      width: 20rem;
+    }
+    &_title {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    &_price {
+      font-size: 1rem;
+      margin-left: 1.5rem;
+      margin-top: 1.2rem;
+    }
+    &_description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      &-text {
+        max-width: 20rem;
+        font-size: 1.5rem;
+      }
+    }
+    &-odd {
+      flex-direction: row-reverse;
+    }
+  }
+}
