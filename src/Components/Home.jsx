@@ -1,31 +1,13 @@
 import React, { Component } from 'react';
 import MailIcon from './MailIcon';
 import LatestCollection from './LatestCollection';
-import logo from '../images/juried logo-01.svg';
+import Menu from './Menu';
 
 export default class Home extends Component {
   render() {
     return (
       <div className='homepage'>
-        <div className='homepage_menu'>
-          <img className='homepage_photo-logo' src={logo} alt='logo' />
-          <ul className='homepage_menu_list'>
-            <li
-              onClick={() => this.props.activeChangeHandler('home')}
-              className='homepage_menu_list_item'
-            >
-              Home
-            </li>
-            <li
-              onClick={() => this.props.activeChangeHandler('about')}
-              className='homepage_menu_list_item'
-            >
-              About
-            </li>
-            <li className='homepage_menu_list_item'>Shop</li>
-            <li className='homepage_menu_list_item'>Contact</li>
-          </ul>
-        </div>
+        <Menu activeChangeHandler={this.props.activeChangeHandler} />
         <div className='aboveFold'>
           <div className='aboveFold_card'>
             <p className='aboveFold_card_content'>

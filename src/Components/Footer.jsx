@@ -8,52 +8,59 @@ export default class Footer extends Component {
     return (
       <div className='footer'>
         <div className='footer_links'>
-          <div className='footer_about'>
-            <h3 className='footer_links_email_newsletter_header'>About Us</h3>
-            <p className='footer_links_email_newsletter_body'>
-              We sell art for money and that's basically all you need to know.
-            </p>
+          <div className='container container-1'>
+            <div className='footer_about'>
+              <h3 className='footer_links_email_newsletter_header'>About Us</h3>
+              <p className='footer_links_email_newsletter_body'>
+                We sell art for money and that's basically all you need to know.
+              </p>
+            </div>
+            <div className='footer_menu'>
+              <h3 className='footer_links_email_newsletter_header'>
+                Quick links
+              </h3>
+              <ul className='footer_menu_list'>
+                <li className='footer_menu_list_item'>Policy</li>
+                <li className='footer_menu_list_item'>Shipping</li>
+                <li className='footer_menu_list_item'>Returns</li>
+              </ul>
+            </div>
           </div>
-          <div className='footer_menu'>
-            <h3 className='footer_links_email_newsletter_header'>
-              Quick links
-            </h3>
-            <ul className='footer_menu_list'>
-              <li className='footer_menu_list_item'>Policy</li>
-              <li className='footer_menu_list_item'>Shipping</li>
-              <li className='footer_menu_list_item'>Returns</li>
-            </ul>
+
+          <div className='container'>
+            <div className='footer_menu'>
+              <h3 className='footer_links_email_newsletter_header'>
+                Shop menu
+              </h3>
+              <ul className='footer_menu_list'>
+                <li
+                  onClick={() => this.props.activeChangeHandler('home')}
+                  className='footer_menu_list_item'
+                >
+                  Home
+                </li>
+                <li
+                  onClick={() => this.props.activeChangeHandler('about')}
+                  className='footer_menu_list_item'
+                >
+                  About
+                </li>
+                <li
+                  onClick={() => this.props.activeChangeHandler('shop')}
+                  className='footer_menu_list_item'
+                >
+                  Shop
+                </li>
+                <li
+                  onClick={() => this.props.activeChangeHandler('contact')}
+                  className='footer_menu_list_item'
+                >
+                  Contact
+                </li>
+              </ul>
+            </div>
+            <FooterEmail />
           </div>
-          <div className='footer_menu'>
-            <h3 className='footer_links_email_newsletter_header'>Shop menu</h3>
-            <ul className='footer_menu_list'>
-              <li
-                onClick={() => this.props.activeChangeHandler('home')}
-                className='footer_menu_list_item'
-              >
-                Home
-              </li>
-              <li
-                onClick={() => this.props.activeChangeHandler('about')}
-                className='footer_menu_list_item'
-              >
-                About
-              </li>
-              <li
-                onClick={() => this.props.activeChangeHandler('shop')}
-                className='footer_menu_list_item'
-              >
-                Shop
-              </li>
-              <li
-                onClick={() => this.props.activeChangeHandler('contact')}
-                className='footer_menu_list_item'
-              >
-                Contact
-              </li>
-            </ul>
-          </div>
-          <FooterEmail />
         </div>
         <div className='footer_copy'>
           <p>© 2019 JURIED. All rights reserved.</p>

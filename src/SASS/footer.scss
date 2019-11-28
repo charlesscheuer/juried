@@ -31,10 +31,14 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
     &_email {
       &_newsletter {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         &_header {
           height: 0.2rem;
           text-transform: uppercase;
@@ -96,9 +100,18 @@
   &_copy {
     color: $color-light;
     padding-bottom: 2rem;
+    font-family: $font-2;
   }
   &_about {
     max-width: 15rem;
     margin-right: 2rem;
+  }
+}
+
+.container {
+  display: flex;
+  @media screen and (max-width: 1007px) {
+    flex-direction: column;
+    margin-left: 2rem;
   }
 }
