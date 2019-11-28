@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.4bdc9cb1.chunk.css",
-    "main.js": "/static/js/main.1e7faffc.chunk.js",
-    "main.js.map": "/static/js/main.1e7faffc.chunk.js.map",
+    "main.css": "/static/css/main.2c1953d3.chunk.css",
+    "main.js": "/static/js/main.04254727.chunk.js",
+    "main.js.map": "/static/js/main.04254727.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.43fd69f1.js",
     "runtime-main.js.map": "/static/js/runtime-main.43fd69f1.js.map",
-    "static/js/2.faded347.chunk.js": "/static/js/2.faded347.chunk.js",
-    "static/js/2.faded347.chunk.js.map": "/static/js/2.faded347.chunk.js.map",
+    "static/js/2.9d46bacc.chunk.js": "/static/js/2.9d46bacc.chunk.js",
+    "static/js/2.9d46bacc.chunk.js.map": "/static/js/2.9d46bacc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5e9c7c7ef30ef76cdc1949667054475c.js": "/precache-manifest.5e9c7c7ef30ef76cdc1949667054475c.js",
+    "precache-manifest.62a104c34f8ed7106b43309deb068829.js": "/precache-manifest.62a104c34f8ed7106b43309deb068829.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4bdc9cb1.chunk.css.map": "/static/css/main.4bdc9cb1.chunk.css.map",
+    "static/css/main.2c1953d3.chunk.css.map": "/static/css/main.2c1953d3.chunk.css.map",
     "static/media/main.scss": "/static/media/gt-america-thin.22249bca.woff",
     "static/media/juried logo-01.svg": "/static/media/juried logo-01.c32794f6.svg",
     "static/media/pastel.jpg": "/static/media/pastel.4c2e668d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.43fd69f1.js",
-    "static/js/2.faded347.chunk.js",
-    "static/css/main.4bdc9cb1.chunk.css",
-    "static/js/main.1e7faffc.chunk.js"
+    "static/js/2.9d46bacc.chunk.js",
+    "static/css/main.2c1953d3.chunk.css",
+    "static/js/main.04254727.chunk.js"
   ]
 }
