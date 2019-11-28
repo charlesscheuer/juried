@@ -31,6 +31,10 @@ export default class App extends Component {
     }
   }
 
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const { pathname } = this.props.history.location;
     // console.log(pathname);

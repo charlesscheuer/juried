@@ -1,7 +1,7 @@
 .menuIcon {
   cursor: pointer;
   margin-right: 2rem;
-  margin-top: 1.5rem;
+  margin-top: -0.5rem;
 }
 
 .homepage {
@@ -18,9 +18,12 @@
       height: 9rem;
       background-color: $color-light;
       padding-right: 32vw;
+
       @media screen and (max-width: 900px) {
         background-color: transparent;
         padding-right: 0;
+        top: 0rem;
+        height: 4rem;
       }
     }
     &-img {
@@ -41,6 +44,10 @@
     z-index: 10;
     font-family: $font-2;
     font-weight: 400;
+    @media screen and (max-width: 900px) {
+      background-color: $color-light;
+      height: 4.5rem;
+    }
     &-about {
       background-color: $color-light;
     }
@@ -74,10 +81,6 @@
       }
     }
 
-    @media screen and (max-width: 900px) {
-      background-color: $color-light;
-      height: 8.5rem;
-    }
     &::before {
       content: '';
       position: absolute;
