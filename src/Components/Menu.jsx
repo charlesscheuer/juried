@@ -8,6 +8,7 @@ export default class Menu extends Component {
     this.state = { width: 0, isToggled: false };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.setWrapperRef = this.setWrapperRef.bind(this);
+    this.setMenuWrapperRef = this.setMenuWrapperRef.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
@@ -56,11 +57,19 @@ export default class Menu extends Component {
     this.wrapperRef = node;
   }
 
+  setMenuWrapperRef(node) {
+    this.menuWrapperRef = node;
+  }
+
   /**
    * Alert if clicked on outside of element
    */
   handleClickOutside(event) {
-    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+    if (
+      this.wrapperRef &&
+      !this.wrapperRef.contains(event.target) &&
+      !this.menuWrapperRef.contains(event.target)
+    ) {
       this.toggleMenuHandler();
     }
   }
@@ -91,7 +100,11 @@ export default class Menu extends Component {
       >
         <img className='homepage_photo-logo' src={logo} alt='logo' />
         {this.state.width < 900 ? (
-          <div onClick={() => this.toggleMenuHandler()} className='menuIcon'>
+          <div
+            ref={this.setMenuWrapperRef}
+            onClick={() => this.toggleMenuHandler()}
+            className='menuIcon'
+          >
             <MenuIcon />
           </div>
         ) : (
