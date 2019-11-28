@@ -7,6 +7,8 @@ export default class Menu extends Component {
     super(props);
     this.state = { width: 0, isToggled: false };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.setWrapperRef = this.setWrapperRef.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
   renderMobileMenu = () => {
@@ -14,6 +16,7 @@ export default class Menu extends Component {
     if (width < 900) {
       return (
         <div
+          ref={this.setWrapperRef}
           className={
             isToggled
               ? 'homepage_menu_mobile'
@@ -46,8 +49,25 @@ export default class Menu extends Component {
     this.setState({ isToggled: !isToggled });
   };
 
+  /**
+   * Set the wrapper ref
+   */
+  setWrapperRef(node) {
+    this.wrapperRef = node;
+  }
+
+  /**
+   * Alert if clicked on outside of element
+   */
+  handleClickOutside(event) {
+    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+      this.toggleMenuHandler();
+    }
+  }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
+    document.removeEventListener('mousedown', this.handleClickOutside);
   }
 
   updateWindowDimensions() {
@@ -57,6 +77,7 @@ export default class Menu extends Component {
   componentDidMount() {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
+    document.addEventListener('mousedown', this.handleClickOutside);
   }
 
   render() {

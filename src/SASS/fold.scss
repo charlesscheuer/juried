@@ -53,7 +53,7 @@
     }
     &_mobile {
       position: absolute;
-      top: 8rem;
+      top: 5rem;
       width: 100%;
       z-index: 10000000;
       display: flex;
@@ -154,6 +154,7 @@
     @media screen and (max-width: 900px) {
       width: 100%;
       align-items: center;
+      padding-bottom: 10rem;
     }
     &_content {
       height: 100%;
@@ -162,6 +163,7 @@
       @media screen and (max-width: 900px) {
         padding-left: 0;
         text-align: center;
+        padding-top: 4rem;
       }
     }
     &_subscribe {
