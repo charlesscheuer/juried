@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8a67082b957ab6742b12c366df6c660",
+    "revision": "1bbcf003873dd0c08bf35e3f4c76850a",
     "url": "/index.html"
   },
   {
-    "revision": "761df7736077e2c7272d",
-    "url": "/static/css/main.de8c1259.chunk.css"
+    "revision": "68ff7660d0e4d2ae26a2",
+    "url": "/static/css/main.fbf0a0b8.chunk.css"
   },
   {
-    "revision": "1f50f2be0eb2ead7d818",
-    "url": "/static/js/2.6faa4f41.chunk.js"
+    "revision": "941d446a64e472c283bd",
+    "url": "/static/js/2.68a20a79.chunk.js"
   },
   {
-    "revision": "761df7736077e2c7272d",
-    "url": "/static/js/main.5d167414.chunk.js"
+    "revision": "68ff7660d0e4d2ae26a2",
+    "url": "/static/js/main.3273280f.chunk.js"
   },
   {
     "revision": "4678b163dc7e58482cac",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a781d26fa39ad4eeac20e2e9e41ef39",
     "url": "/static/media/Canela-Regular-Web.3a781d26.woff"
+  },
+  {
+    "revision": "22129636427b9abfa58891fb94c7186c",
+    "url": "/static/media/art-show.22129636.jpg"
   },
   {
     "revision": "032e9c97f3a1f754b4c86d2855083cf8",
@@ -74,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c32794f65be15dff1ce22765049dfd55",
     "url": "/static/media/juried logo-01.c32794f6.svg"
+  },
+  {
+    "revision": "6a9c09506d67e5c273aa0665575a8836",
+    "url": "/static/media/new-what-is.6a9c0950.jpg"
   },
   {
     "revision": "4c2e668d98a01188d3801e4efdf22b0d",
