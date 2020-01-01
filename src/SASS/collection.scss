@@ -25,6 +25,12 @@
   position: relative;
   background-color: $color-light;
   z-index: 100;
+  &-shopPage {
+    padding-top: 14rem;
+    @media screen and (max-width: 900px) {
+      padding-top: 7rem;
+    }
+  }
   @media screen and (max-width: 900px) {
     z-index: 1;
   }

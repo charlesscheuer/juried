@@ -19,18 +19,7 @@ export default class Home extends Component {
                 placeholder='EMAIL'
                 className='aboveFold_card_subscribe_input'
               />
-              <div className='aboveFold_card_subscribe_rect'></div>
               <div className='aboveFold_card_subscribe_send'>
-                <input
-                  type='checkbox'
-                  className='aboveFold_card_subscribe_send_check'
-                />
-                <p className='aboveFold_card_subscribe_send_info'>
-                  I have read and agree to the{' '}
-                  <span className='aboveFold_card_subscribe_send_info-underline'>
-                    privacy conditions.
-                  </span>
-                </p>
                 <div className='aboveFold_card_subscribe_send_button'>
                   <p>Submit</p> <MailIcon />
                 </div>

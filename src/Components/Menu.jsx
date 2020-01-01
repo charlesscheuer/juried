@@ -121,7 +121,12 @@ export default class Menu extends Component {
             >
               About
             </li>
-            <li className='homepage_menu_list_item'>Shop</li>
+            <li
+              onClick={() => this.props.activeChangeHandler('shop')}
+              className='homepage_menu_list_item'
+            >
+              Shop
+            </li>
             <li className='homepage_menu_list_item'>Contact</li>
           </ul>
         )}

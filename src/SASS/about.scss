@@ -77,12 +77,21 @@
 
 .about {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   background-color: $color-light;
   position: relative;
+  height: auto;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+  &-2 {
+    @media screen and (max-width: 900px) {
+      flex-direction: column-reverse;
+    }
+  }
   &_card {
-    height: auto;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -90,20 +99,93 @@
     font-size: 3rem;
     width: 50%;
     color: $color-secondary;
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      height: auto;
+    }
+    &-bottom {
+      font-size: 3rem;
+      width: 100%;
+    }
     &-blue {
       color: $color-light;
       background-color: $color-secondary;
     }
+    &_header {
+      padding-top: 11rem;
+      padding-left: 4rem;
+      color: $color-light;
+      @media screen and (max-width: 600px) {
+        padding-left: 2rem;
+      }
+      &-2 {
+        // this is the what is juried header
+        padding-top: 3rem;
+      }
+      &-bottom {
+        padding-top: 3rem;
+      }
+      &-blue {
+        color: $color-secondary;
+      }
+    }
     &_content {
       height: 100%;
-      padding-left: 2.5rem;
-      padding-top: 10rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+
+      font-size: 1.7rem;
+      @media screen and (max-width: 1289px) {
+        font-size: 1.4rem;
+      }
+      @media screen and (max-width: 974px) {
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: 900px) {
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 1.4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+      }
+      &-bottom {
+        padding-bottom: 3rem;
+      }
     }
   }
   &_photo {
-    height: auto;
+    background-image: url('../images/art-show.jpg');
+    background-size: cover;
+    &-2 {
+      background-image: url('../images/new-what-is.jpg');
+      background-size: contain;
+    }
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    height: 700px;
     width: 50%;
-    color: $color-light;
-    background-color: $color-secondary;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      background-size: cover;
+      background-attachment: scroll;
+      background-position: center;
+    }
   }
 }

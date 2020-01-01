@@ -12,7 +12,8 @@ export default class Footer extends Component {
             <div className='footer_about'>
               <h3 className='footer_links_email_newsletter_header'>About Us</h3>
               <p className='footer_links_email_newsletter_body'>
-                We sell art for money and that's basically all you need to know.
+                Juried carefully curates fine art for sale delivers a monthly
+                collection to your inbox.
               </p>
             </div>
             <div className='footer_menu'>
