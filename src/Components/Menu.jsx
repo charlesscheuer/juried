@@ -37,8 +37,15 @@ export default class Menu extends Component {
             >
               About
             </li>
-            <li className='homepage_menu_mobile_list_item'>Shop</li>
-            <li className='homepage_menu_mobile_list_item'>Contact</li>
+            <li
+              onClick={() => this.props.activeChangeHandler('shop')}
+              className='homepage_menu_mobile_list_item'
+            >
+              Shop
+            </li>
+            <li className='homepage_menu_mobile_list_item'>
+              <a href='mailto:hi@juried.co'>Contact</a>
+            </li>
           </ul>
         </div>
       );
@@ -98,7 +105,12 @@ export default class Menu extends Component {
           about ? 'homepage_menu homepage_menu-about' : 'homepage_menu'
         }
       >
-        <img className='homepage_photo-logo' src={logo} alt='logo' />
+        <img
+          onClick={() => this.props.activeChangeHandler('home')}
+          className='homepage_photo-logo'
+          src={logo}
+          alt='logo'
+        />
         {this.state.width < 900 ? (
           <div
             ref={this.setMenuWrapperRef}
@@ -127,7 +139,9 @@ export default class Menu extends Component {
             >
               Shop
             </li>
-            <li className='homepage_menu_list_item'>Contact</li>
+            <li className='homepage_menu_list_item'>
+              <a href='mailto:hi@juried.co'>Contact</a>
+            </li>
           </ul>
         )}
         {isToggled && this.renderMobileMenu()}

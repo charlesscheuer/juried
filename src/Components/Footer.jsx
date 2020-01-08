@@ -21,9 +21,18 @@ export default class Footer extends Component {
                 Quick links
               </h3>
               <ul className='footer_menu_list'>
-                <li className='footer_menu_list_item'>Policy</li>
-                <li className='footer_menu_list_item'>Shipping</li>
-                <li className='footer_menu_list_item'>Returns</li>
+                <li
+                  onClick={() => this.props.activeChangeHandler('shipping')}
+                  className='footer_menu_list_item'
+                >
+                  Shipping
+                </li>
+                <li
+                  onClick={() => this.props.activeChangeHandler('returns')}
+                  className='footer_menu_list_item'
+                >
+                  Returns
+                </li>
               </ul>
             </div>
           </div>

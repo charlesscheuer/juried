@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Home from './Components/Home';
 import About from './Components/About';
 import Shop from './Components/Shop';
+import Shipping from './Components/Shipping';
+import Returns from './Components/Returns';
 import Footer from './Components/Footer';
 import './App.css';
 import './SASS/main.scss';
@@ -14,6 +16,10 @@ export default class App extends Component {
       this.props.history.push('/about');
     } else if (changeTo === 'shop') {
       this.props.history.push('/shop');
+    } else if (changeTo === 'returns') {
+      this.props.history.push('/returns');
+    } else if (changeTo === 'shipping') {
+      this.props.history.push('/shipping');
     } else if (changeTo === 'contact') {
       this.props.history.push('/contact');
     }
@@ -25,6 +31,14 @@ export default class App extends Component {
 
   renderShop = () => {
     return <Shop activeChangeHandler={this.activeChangeHandler} />;
+  };
+
+  renderShipping = () => {
+    return <Shipping activeChangeHandler={this.activeChangeHandler} />;
+  };
+
+  renderReturns = () => {
+    return <Returns activeChangeHandler={this.activeChangeHandler} />;
   };
 
   renderAbout = () => {
@@ -51,6 +65,8 @@ export default class App extends Component {
         {pathname === '/home' && this.renderHome()}
         {pathname === '/about' && this.renderAbout()}
         {pathname === '/shop' && this.renderShop()}
+        {pathname === '/returns' && this.renderReturns()}
+        {pathname === '/shipping' && this.renderShipping()}
         <Footer activeChangeHandler={this.activeChangeHandler} />
       </div>
     );

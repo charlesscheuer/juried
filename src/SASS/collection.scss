@@ -44,6 +44,18 @@
       flex-direction: column;
       align-items: center;
     }
+    &_buy {
+      background-color: $color-secondary;
+      color: $color-light;
+      border-radius: 0;
+      border: none;
+      outline: none;
+      margin-left: 2rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+      cursor: pointer;
+      padding: 1rem 2rem;
+    }
     &_info {
       display: flex;
       flex-direction: column;
@@ -54,12 +66,15 @@
       width: 20rem;
     }
     &_title {
-      font-size: 1.6rem;
-      font-weight: 500;
+      font-family: $font-2;
+      color: $color-secondary;
+      font-weight: 300;
+      font-size: 1.9rem;
     }
 
     &_price {
       font-size: 1rem;
+      color: $color-secondary;
       margin-left: 1.5rem;
       margin-top: 1.2rem;
     }
@@ -75,6 +90,7 @@
       }
       &-text {
         max-width: 20rem;
+        color: $color-secondary;
         font-size: 1.5rem;
       }
     }

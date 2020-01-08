@@ -1,3 +1,10 @@
+.policies {
+  padding-top: 10rem;
+  @media screen and (max-width: 900px) {
+    padding-top: 5rem;
+  }
+}
+
 .about {
   position: relative;
   width: 100%;
@@ -113,9 +120,12 @@
       background-color: $color-secondary;
     }
     &_header {
-      padding-top: 11rem;
+      padding-top: 13rem;
       padding-left: 4rem;
       color: $color-light;
+      font-family: $font-2;
+      font-weight: 300;
+      font-size: 1.9rem;
       @media screen and (max-width: 600px) {
         padding-left: 2rem;
       }

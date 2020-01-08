@@ -34,7 +34,7 @@ export default class Home extends Component {
             <p className='about_card_content about_card_content-2'>
               Based on the age-old concept of the juried art show, Juried cuts
               through the chaos by carefully curating fine art for sale across
-              the United States and delivering our a biweekly collection to your
+              the United States and delivering our a monthly collection to your
               inbox. We work directly with new and established artisans who seek
               to grow their audiences and share their craft with the world, and
               in doing so we bring you the finest selection of multimedia
